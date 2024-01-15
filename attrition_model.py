@@ -49,7 +49,7 @@ def fn_model(df):
                 RandomForestClassifier(),
                 GradientBoostingClassifier(), 
                 AdaBoostClassifier(), 
-                xgm.XGBClassifier(), 
+                # xgm.XGBClassifier(), 
                 lg.LGBMClassifier(),
                 LogisticRegression()
                 ]
