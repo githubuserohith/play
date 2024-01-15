@@ -41,7 +41,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
         # please refer to the doc for more information:
         # https://mlflow.org/docs/latest/model-registry.html#api-workflow
         mlflow.sklearn.log_model(
-        model, "model", registered_model_name="ElasticnetWineModel")
+        model, "model", registered_model_name="attrition")
     else:
         mlflow.sklearn.log_model(model, "model")
    # Define the experiment name
