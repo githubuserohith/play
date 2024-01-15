@@ -24,7 +24,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     #     os.makedirs(mlflow_dir, exist_ok=True)
     
     # Set the tracking URI to the MLflow directory
-    mlflow.set_tracking_uri("https://github.com/githubuserohith/play/tree/main/mlruns")
+    # mlflow.set_tracking_uri("https://github.com/githubuserohith/play/tree/main/mlruns")
 
     mlflow.set_tracking_uri('http://127.0.0.1:5000/')
    
