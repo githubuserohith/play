@@ -89,14 +89,15 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
             print(f"{model} accuracy: {accuracy}")
             print(f"{model} F1 score: {f1}")
     
-    # end current run
-    mlflow.end_run()
+            # end current run
+            mlflow.end_run()
 
     # Register the model
     # model_details = mlflow.register_model(model_uri="mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model"
     #                                       ,name="play_attrition")
     # print(model_details)
 
+    # MLFLOW_TRACKING_URI=https://dagshub.com/githubuserohith/play.mlflow \
     # MLFLOW_TRACKING_USERNAME=githubuserohith \
     # MLFLOW_TRACKING_PASSWORD=0c56e514448497e871937945a92350a57752a341  \
     # python script.py
