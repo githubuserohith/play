@@ -1,3 +1,4 @@
+from urllib.parse import urlparse
 import mlflow
 import mlflow.sklearn
 import os
@@ -13,7 +14,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
 
     # Create a subdirectory for MLflow
     # mlflow_dir = "mlruns"
-    mlflow_dir = "https://github.com/githubuserohith/play/tree/main/mlruns"
+    # mlflow_dir = "https://github.com/githubuserohith/play/tree/main/mlruns"
 
     # Check if the directory exists and is accessible
     # if os.access(mlflow_dir, os.R_OK):
@@ -26,8 +27,23 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     # Set the tracking URI to the MLflow directory
     # mlflow.set_tracking_uri("https://github.com/githubuserohith/play/tree/main/mlruns")
 
-    mlflow.set_tracking_uri('http://127.0.0.1:5000/')
+    # mlflow.set_tracking_uri("https://dagshub.com/githubuserohith/play.mlflow")
    
+    remote_server_uri = "https://dagshub.com/githubuserohith/play.mlflow"
+    mlflow.set_tracking_uri(remote_server_uri)
+
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+
+    # Model registry does not work with file store
+    if tracking_url_type_store != "file":
+        # Register the model
+        # There are other ways to use the Model Registry, which depends on the use case,
+        # please refer to the doc for more information:
+        # https://mlflow.org/docs/latest/model-registry.html#api-workflow
+        mlflow.sklearn.log_model(
+        model, "model", registered_model_name="ElasticnetWineModel")
+    else:
+        mlflow.sklearn.log_model(model, "model")
    # Define the experiment name
     experiment_name = "exp_attrition"
 
