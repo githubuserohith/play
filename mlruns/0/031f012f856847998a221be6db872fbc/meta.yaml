@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/031f012f856847998a221be6db872fbc/artifacts
+end_time: 1705173995073
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 031f012f856847998a221be6db872fbc
+run_name: DecisionTreeClassifier()
+run_uuid: 031f012f856847998a221be6db872fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705173988346
+status: 3
+tags: []
+user_id: rohit

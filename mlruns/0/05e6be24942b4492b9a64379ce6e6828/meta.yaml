@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/05e6be24942b4492b9a64379ce6e6828/artifacts
+end_time: 1705174019512
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 05e6be24942b4492b9a64379ce6e6828
+run_name: LogisticRegression()
+run_uuid: 05e6be24942b4492b9a64379ce6e6828
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705174016169
+status: 3
+tags: []
+user_id: rohit

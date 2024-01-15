@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/7ee75218976844fbb1ada3c3a2bea46a/artifacts
+end_time: 1705174016140
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7ee75218976844fbb1ada3c3a2bea46a
+run_name: LGBMClassifier()
+run_uuid: 7ee75218976844fbb1ada3c3a2bea46a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705174011454
+status: 3
+tags: []
+user_id: rohit

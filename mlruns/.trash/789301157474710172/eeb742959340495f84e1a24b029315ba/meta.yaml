@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/789301157474710172/eeb742959340495f84e1a24b029315ba/artifacts
+deleted_time: 1705207812630
+end_time: 1705163542093
+entry_point_name: ''
+experiment_id: '789301157474710172'
+lifecycle_stage: deleted
+run_id: eeb742959340495f84e1a24b029315ba
+run_name: RandomForestClassifier()
+run_uuid: eeb742959340495f84e1a24b029315ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705163536419
+status: 3
+tags: []
+user_id: rohit

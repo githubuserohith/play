@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/3feb437169ba424b9c1a9bd1c6277da6/artifacts
+end_time: 1705174051104
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3feb437169ba424b9c1a9bd1c6277da6
+run_name: RandomForestClassifier()
+run_uuid: 3feb437169ba424b9c1a9bd1c6277da6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705174047176
+status: 3
+tags: []
+user_id: rohit

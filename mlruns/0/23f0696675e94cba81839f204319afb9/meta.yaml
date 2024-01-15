@@ -1,0 +1,17 @@
+artifact_uri: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/23f0696675e94cba81839f204319afb9/artifacts
+end_time: 1705174023836
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 23f0696675e94cba81839f204319afb9
+run_name: "VotingClassifier(estimators=[('rf', GradientBoostingClassifier()),\n                             ('gb',
+  AdaBoostClassifier(random_state=42)),\n                             ('lr',\n                              LogisticRegression(class_weight='balanced',\n
+  \                                                random_state=42))],\n                 voting='soft')"
+run_uuid: 23f0696675e94cba81839f204319afb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705174019545
+status: 3
+tags: []
+user_id: rohit

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/653894771669409461/94633a889395481195bc2c3bd29fa006/artifacts
+end_time: 1705223289671
+entry_point_name: ''
+experiment_id: '653894771669409461'
+lifecycle_stage: active
+run_id: 94633a889395481195bc2c3bd29fa006
+run_name: LGBMClassifier()
+run_uuid: 94633a889395481195bc2c3bd29fa006
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705223279987
+status: 3
+tags: []
+user_id: rohit

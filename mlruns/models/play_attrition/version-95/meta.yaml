@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1705214124942
+current_stage: None
+description: ''
+last_updated_timestamp: 1705214124942
+name: play_attrition
+run_id: 393a7a47e42f416ba1ee2618d25b6188
+run_link: ''
+source: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/393a7a47e42f416ba1ee2618d25b6188/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/rohit/anaconda3/envs/streamlite/Scripts/MLOP/session%20-%20MLflow/mlruns/0/393a7a47e42f416ba1ee2618d25b6188/artifacts/model
+user_id: null
+version: 95

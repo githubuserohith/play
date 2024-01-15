@@ -1,0 +1,17 @@
+artifact_uri: mlflow-artifacts:/653894771669409461/aa52836c2a734fed8b7628cde3b21914/artifacts
+end_time: 1705223216261
+entry_point_name: ''
+experiment_id: '653894771669409461'
+lifecycle_stage: active
+run_id: aa52836c2a734fed8b7628cde3b21914
+run_name: "VotingClassifier(estimators=[('rf', GradientBoostingClassifier()),\n                             ('gb',
+  AdaBoostClassifier(random_state=42)),\n                             ('lr',\n                              LogisticRegression(class_weight='balanced',\n
+  \                                                random_state=42))],\n                 voting='soft')"
+run_uuid: aa52836c2a734fed8b7628cde3b21914
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705223211668
+status: 3
+tags: []
+user_id: rohit
