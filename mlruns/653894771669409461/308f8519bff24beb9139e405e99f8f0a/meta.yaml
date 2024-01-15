@@ -1,0 +1,22 @@
+artifact_uri: mlflow-artifacts:/653894771669409461/308f8519bff24beb9139e405e99f8f0a/artifacts
+end_time: 1705308095368
+entry_point_name: ''
+experiment_id: '653894771669409461'
+lifecycle_stage: active
+run_id: 308f8519bff24beb9139e405e99f8f0a
+run_name: "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None,
+  colsample_bynode=None,\n              colsample_bytree=None, device=None, early_stopping_rounds=None,\n
+  \             enable_categorical=False, eval_metric=None, feature_types=None,\n
+  \             gamma=None, grow_policy=None, importance_type=None,\n              interaction_constraints=None,
+  learning_rate=None, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n
+  \             max_delta_step=None, max_depth=None, max_leaves=None,\n              min_child_weight=None,
+  missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=None,
+  n_jobs=None,\n              num_parallel_tree=None, random_state=None, ...)"
+run_uuid: 308f8519bff24beb9139e405e99f8f0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705308091481
+status: 3
+tags: []
+user_id: rohit

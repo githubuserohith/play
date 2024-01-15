@@ -13,18 +13,18 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
 
     # Create a subdirectory for MLflow
     # mlflow_dir = "mlruns"
-    # mlflow_dir = "mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model/MLmodel"
+    mlflow_dir = "https://github.com/githubuserohith/play/tree/main/mlruns"
 
     # Check if the directory exists and is accessible
     # if os.access(mlflow_dir, os.R_OK):
     #     print(f"The directory {mlflow_dir} exists and is accessible.")
     # else:
     #     print(f"The directory {mlflow_dir} does not exist or is not accessible.")
-        # Create the directory if it doesn't exist
-        # os.makedirs(mlflow_dir, exist_ok=True)
+    #     Create the directory if it doesn't exist
+    #     os.makedirs(mlflow_dir, exist_ok=True)
     
     # Set the tracking URI to the MLflow directory
-    # mlflow.set_tracking_uri('file://' + mlflow_dir)
+    mlflow.set_tracking_uri("https://github.com/githubuserohith/play/tree/main/mlruns")
 
     mlflow.set_tracking_uri('http://127.0.0.1:5000/')
    
