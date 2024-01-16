@@ -73,7 +73,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     for model in model_list:
         # Start a new MLflow run
         with mlflow.start_run(run_name=f"{model}", nested=True):
-            # Define and train the model
+            # Define and train the model 
             
             model.fit(X_train, y_train)
 
