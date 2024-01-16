@@ -41,11 +41,11 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
         # please refer to the doc for more information:
         # https://mlflow.org/docs/latest/model-registry.html#api-workflow
         mlflow.sklearn.log_model(
-        model, "model", registered_model_name="ElasticnetWineModel")
+        model, "model", registered_model_name="attrition")
     else:
         mlflow.sklearn.log_model(model, "model")
    # Define the experiment name
-    experiment_name = "exp_attrition1"
+    experiment_name = "exp_attrition"
 
     # Check if the experiment exists
     experiment = mlflow.get_experiment_by_name(experiment_name)
@@ -89,8 +89,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
             print(f"{model} accuracy: {accuracy}")
             print(f"{model} F1 score: {f1}")
     
-    # end current run
-    mlflow.end_run()
+            # end current run
+            mlflow.end_run()
 
     # Register the model
     # model_details = mlflow.register_model(model_uri="mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model"
@@ -99,5 +99,5 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
 
     # MLFLOW_TRACKING_URI=https://dagshub.com/githubuserohith/play.mlflow \
     # MLFLOW_TRACKING_USERNAME=githubuserohith \
-    # MLFLOW_TRACKING_PASSWORD=0c56e514448497e871937945a92350a57752a341  \
+    # MLFLOW_TRACKING_PASSWORD=0c56e514448497e871937945a92350a57752a341 \
     # python script.py
