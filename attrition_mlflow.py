@@ -91,8 +91,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
             print(f"{model} accuracy: {accuracy}")
             print(f"{model} F1 score: {f1}")
 
-        # end current run
-        mlflow.end_run()
+    # end current run
+    mlflow.end_run()
     
 
     # Register the model
