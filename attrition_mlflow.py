@@ -45,7 +45,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     else:
         mlflow.sklearn.log_model(model, "model")
    # Define the experiment name
-    experiment_name = "exp_attrition"
+    experiment_name = "exp_attrition_mlop"
 
     # Check if the experiment exists
     experiment = mlflow.get_experiment_by_name(experiment_name)
