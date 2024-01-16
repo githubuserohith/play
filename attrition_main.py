@@ -3,7 +3,9 @@ import attrition_mlflow as al
 import attrition_streamlit as ast
 import os
 import pandas as pd
+import warnings
 
+warnings.filterwarnings("ignore")
 
 # os.chdir(r"")
 df = pd.read_csv("IBM.csv")
