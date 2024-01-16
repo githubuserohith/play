@@ -8,16 +8,16 @@ import streamlit as st
 
 warnings.filterwarnings("ignore")
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://imgur.com/aqgmhvG");
-background-size: cover;
-}
-</style>
-'''
+# page_bg_img = '''
+# <style>
+# body {
+# background-image: url("https://imgur.com/aqgmhvG");
+# background-size: cover;
+# }
+# </style>
+# '''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+# st.markdown(page_bg_img, unsafe_allow_html=True)
 # os.chdir(r"")
 df = pd.read_csv("IBM.csv")
 
