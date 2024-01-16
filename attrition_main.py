@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 page_bg_img = '''
 <style>
 body {
-background-image: url("Photo-compressed.png");
+background-image: url("https://imgur.com/aqgmhvG");
 background-size: cover;
 }
 </style>
