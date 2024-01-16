@@ -57,6 +57,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
         
     else:
         # Set the experiment
+        mlflow.delete_experiment(experiment_name)
+        mlflow.create_experiment(experiment_name)
         mlflow.set_experiment(experiment_name)
 
     experiment = mlflow.get_experiment_by_name(experiment_name)  
@@ -88,9 +90,10 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
             print(f"{model} AUC: {auc}")
             print(f"{model} accuracy: {accuracy}")
             print(f"{model} F1 score: {f1}")
+
+        # end current run
+        mlflow.end_run()
     
-    # end current run
-    # mlflow.end_run()
 
     # Register the model
     # model_details = mlflow.register_model(model_uri="mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model"
