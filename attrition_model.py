@@ -182,5 +182,5 @@ def fn_pipe(df,type,model,pp):
         X1 = pd.DataFrame(pp.transform(X_test), columns=pp.get_feature_names_out(X_test.columns))
         X1 = pd.concat([X1,X_test[['EnvironmentSatisfaction','JobSatisfaction','NumCompaniesWorked','WorkLifeBalance']]], axis=1)
         X_test['output'] = model.predict(X1)
-        X_test.output = X_test.output.replace({0:'Green',1:'Red'})
+        X_test.output = X_test.output.replace({0:'No',1:'Yes'})
         return (X_test)
