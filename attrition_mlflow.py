@@ -9,7 +9,14 @@ from sklearn.metrics import accuracy_score, roc_auc_score,f1_score
 # Set the tracking URI to the local tracking server
 
 def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
-    
+
+    # Set MLFLOW_TRACKING_URI, MLFLOW_TRACKING_USERNAME, and MLFLOW_TRACKING_PASSWORD
+    os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/githubuserohith/play.mlflow"
+    os.environ["MLFLOW_TRACKING_USERNAME"] = "githubuserohith"
+    os.environ["MLFLOW_TRACKING_PASSWORD"] = "0c56e514448497e871937945a92350a57752a341"
+
+# Now you can use MLflow with the configured environment variables
+
     # cwd = os.getcwd()
 
     # Create a subdirectory for MLflow
