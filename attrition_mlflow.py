@@ -25,27 +25,27 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     #     os.makedirs(mlflow_dir, exist_ok=True)
     
     # Set the tracking URI to the MLflow directory
-    # mlflow.set_tracking_uri("https://github.com/githubuserohith/play/tree/main/mlruns")
+    mlflow.set_tracking_uri("http://localhost:5000")
 
     # mlflow.set_tracking_uri("https://dagshub.com/githubuserohith/play.mlflow")
    
-    remote_server_uri = "https://dagshub.com/githubuserohith/play.mlflow"
-    mlflow.set_tracking_uri(remote_server_uri)
+    # remote_server_uri = "https://dagshub.com/githubuserohith/play.mlflow"
+    # mlflow.set_tracking_uri(remote_server_uri)
 
-    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+    # tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
-    # Model registry does not work with file store
-    if tracking_url_type_store != "file":
-        # Register the model
-        # There are other ways to use the Model Registry, which depends on the use case,
-        # please refer to the doc for more information:
-        # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-        mlflow.sklearn.log_model(
-        model, "model", registered_model_name="attrition")
-    else:
-        mlflow.sklearn.log_model(model, "model")
+    # # Model registry does not work with file store
+    # if tracking_url_type_store != "file":
+    #     # Register the model
+    #     # There are other ways to use the Model Registry, which depends on the use case,
+    #     # please refer to the doc for more information:
+    #     # https://mlflow.org/docs/latest/model-registry.html#api-workflow
+    #     mlflow.sklearn.log_model(
+    #     model, "model", registered_model_name="attrition")
+    # else:
+    #     mlflow.sklearn.log_model(model, "model")
    # Define the experiment name
-    experiment_name = "exp_attrition_mlop"
+    experiment_name = "exp_attrition_mlop1"
 
     # Check if the experiment exists
     experiment = mlflow.get_experiment_by_name(experiment_name)
