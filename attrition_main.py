@@ -8,16 +8,16 @@ import streamlit as st
 
 warnings.filterwarnings("ignore")
 
-css = """
-    body {
-        background-image: url('Photo-compressed.png');
-        background-size: cover;
-    }
-"""
+page_bg_img = '''
+<style>
+body {
+background-image: url("Photo-compressed.png");
+background-size: cover;
+}
+</style>
+'''
 
-# Set the custom CSS
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-
+st.markdown(page_bg_img, unsafe_allow_html=True)
 # os.chdir(r"")
 df = pd.read_csv("IBM.csv")
 
