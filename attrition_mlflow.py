@@ -62,8 +62,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
     experiment = mlflow.get_experiment_by_name(experiment_name)  
 
     for model in model_list:
-    # Start a new MLflow run
-        with mlflow.start_run(run_name=f"{model}", nested=True):
+        # Start a new MLflow run
+        with mlflow.start_run(run_name=f"{model}"):
             # Define and train the model
             
             model.fit(X_train, y_train)
@@ -89,8 +89,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
             print(f"{model} accuracy: {accuracy}")
             print(f"{model} F1 score: {f1}")
     
-        # end current run
-        mlflow.end_run()
+    # end current run
+    mlflow.end_run()
 
     # Register the model
     # model_details = mlflow.register_model(model_uri="mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model"
