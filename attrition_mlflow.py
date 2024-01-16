@@ -94,6 +94,7 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
         # end current run
         mlflow.end_run()
     
+    print("MLFLOW end")
 
     # Register the model
     # model_details = mlflow.register_model(model_uri="mlflow-artifacts:/789301157474710172/3bbec4cffcb547dc997e2a2c2196b73d/artifacts/model"
