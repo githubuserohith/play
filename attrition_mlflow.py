@@ -57,8 +57,8 @@ def fn_mlflow(model,X_train,X_test,y_train,y_test,model_list):
         
     else:
         # Set the experiment
-        mlflow.delete_experiment(experiment_name)
-        mlflow.create_experiment(experiment_name)
+        # mlflow.delete_experiment(experiment_name)
+        # mlflow.create_experiment(experiment_name)
         mlflow.set_experiment(experiment_name)
 
     experiment = mlflow.get_experiment_by_name(experiment_name)  
