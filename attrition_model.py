@@ -68,17 +68,17 @@ def fn_model(df):
     print(pd.DataFrame({'model':models,'precision':precision,'auc':auc}).sort_values(by='auc'))
 
     # ensembler
-    gb_clf = xgm.XGBClassifier()
-    lr_clf = lg.LGBMClassifier(random_state=42)
+    xgb_clf = xgm.XGBClassifier()
+    lgbm_clf = lg.LGBMClassifier(random_state=42)
     rf_clf = RandomForestClassifier(random_state=42)
-    gb_clf  = AdaBoostClassifier(random_state=42)
+    ada_clf  = AdaBoostClassifier(random_state=42)
     rf_clf = GradientBoostingClassifier()
     lr_clf  = LogisticRegression(random_state=42, class_weight="balanced")
 
     hard_voting_clf = VotingClassifier(estimators=[
         ('rf', rf_clf),
-        ('gb', gb_clf),
-        ('lr', lr_clf)
+        ('ada', ada_clf),
+        ('lgbm', lgbm_clf)
     #     ('svc', svc_clf)
     ], voting='soft')
 
